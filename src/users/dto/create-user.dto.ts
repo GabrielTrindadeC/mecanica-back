@@ -27,7 +27,6 @@ export class CreateUserDto {
   })
   password: string;
 
-  @IsNotEmpty()
   @IsString()
   @IsPhoneNumber('BR') // checks if the phone is in the Brazilian format
   //examples: (11)90000000 ✔;
